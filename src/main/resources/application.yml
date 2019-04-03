@@ -1,0 +1,23 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: com.hisense.test4
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/users_db?useUnicode=true&characterEncoding=utf-8&&useSSL=false&&serverTimezone=Asia/Shanghai&&allowMultiQueries=true
+    username: root
+    password: password
+
+  h2:
+    console:
+      path: /h2-console
+      settings:
+        web-allow-others: true
+      enabled: true
+api:
+  useTask: true
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
